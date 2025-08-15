@@ -1,0 +1,42 @@
+name: namer_app
+description: Aplicación de tareas con Flutter y Supabase
+
+publish_to: 'none'
+
+version: 0.0.1+1
+
+environment:
+  sdk: '>=2.19.4 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Supabase
+  supabase_flutter: ^2.3.4
+  
+  # Navegación
+  go_router: ^13.2.0
+  
+  # Estado y gestión de datos
+  provider: ^6.1.1
+  riverpod: ^2.4.9
+  flutter_riverpod: ^2.4.9
+  
+  # UI y componentes
+  flutter_slidable: ^3.0.1
+  intl: ^0.19.0
+  
+  # Utilidades
+  shared_preferences: ^2.2.2
+  flutter_secure_storage: ^9.0.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/
