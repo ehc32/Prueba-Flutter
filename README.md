@@ -6,7 +6,6 @@ Una aplicación moderna de gestión de tareas construida con Flutter y Supabase,
 
 - **Autenticación completa**: Registro e inicio de sesión con Supabase Auth
 - **Gestión de tareas**: Crear, leer, actualizar y eliminar tareas
-- **Diseño moderno**: Interfaz Material Design 3 con tema personalizable
 - **Funcionalidades avanzadas**:
   - Fechas de vencimiento para tareas
   - Marcado de tareas como completadas
@@ -110,39 +109,6 @@ flutter run
 - **Marcar como completada**: Toca el checkbox de la tarea
 - **Ver estadísticas**: Las estadísticas se muestran en la parte superior de la pantalla
 
-## 🏗️ Estructura del Proyecto
-
-```
-lib/
-├── config/
-│   └── supabase_config.dart          # Configuración de Supabase
-├── core/
-│   └── providers/
-│       └── auth_provider.dart        # Provider de autenticación
-├── features/
-│   ├── auth/
-│   │   └── presentation/
-│   │       ├── screens/
-│   │       │   ├── login_screen.dart
-│   │       │   └── register_screen.dart
-│   │       └── widgets/
-│   │           └── auth_text_field.dart
-│   └── tasks/
-│       ├── domain/
-│       │   └── models/
-│       │       └── task.dart         # Modelo de tarea
-│       └── presentation/
-│           ├── providers/
-│           │   └── tasks_provider.dart
-│           ├── screens/
-│           │   ├── tasks_screen.dart
-│           │   ├── add_task_screen.dart
-│           │   └── edit_task_screen.dart
-│           └── widgets/
-│               ├── task_card.dart
-│               └── task_stats_card.dart
-└── main.dart                         # Punto de entrada
-```
 
 ## 🎨 Personalización
 
@@ -156,31 +122,3 @@ colorScheme: ColorScheme.fromSeed(
 ),
 ```
 
-### Estilos
-Los estilos están definidos en los widgets individuales y pueden ser personalizados según tus necesidades.
-
-## 🔧 Solución de Problemas
-
-### Error de Conexión a Supabase
-- Verifica que las credenciales en `supabase_config.dart` sean correctas
-- Asegúrate de que tu proyecto de Supabase esté activo
-
-### Error de Permisos
-- Verifica que las políticas RLS estén configuradas correctamente
-- Asegúrate de que el usuario esté autenticado
-
-### Problemas de Compilación
-- Ejecuta `flutter clean` y luego `flutter pub get`
-- Verifica que todas las dependencias estén actualizadas
-
-## 📄 Licencia
-
-Este proyecto está bajo la Licencia MIT. Ver el archivo `LICENSE` para más detalles.
-
-## 🤝 Contribuciones
-
-Las contribuciones son bienvenidas. Por favor, abre un issue o un pull request para sugerir mejoras.
-
-## 📞 Soporte
-
-Si tienes alguna pregunta o problema, no dudes en abrir un issue en el repositorio.
